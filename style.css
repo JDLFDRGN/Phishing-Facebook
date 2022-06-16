@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    border-style: none;
+}
+:root{
+    --white: #f0f2f5;
+    --blue: #1877f2;
+    --green: #42b72a;
+}
+section{
+    background-color: var(--white);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.facebook-first-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50px);
+}
+.facebook-second-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.facebook-title>h2,
+.facebook-forgot{
+    color: var(--blue);
+}
+.facebook-title>p{
+    font-size: 1.7em;
+}
+.facebook-title>h2{
+    font-size: 3.1em;
+    margin-bottom: 0.3em;
+}
+.facebook-login{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.facebook-form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25em;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.facebook-title{
+    width: 25em;
+    height: fit-content;
+}
+.facebook-create-account{
+    color: white;
+    background-color: var(--green); 
+    margin: 1.2em;
+    width: 11em;
+}
+.facebook-create-page>a{
+    font-weight: bolder;
+}
+.facebook-border{
+    border: 0.1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 1.2em;
+    height: 1px;
+    width: 100%;
+}
+.facebook-form>input{
+    padding: 0.6em 0;
+    font-size: 1.1em;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.facebook-form>input:not(.facebook-form>input[type='button']){
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 850px){
+    .container{
+        flex-direction: column;
+    }
+    .facebook-title>*{
+        text-align: center;
+    }
+}
